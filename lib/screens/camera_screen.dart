@@ -7,12 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import '../providers/app_provider.dart';
 
-// ════════════════════════════════════════════════
-// 🔑 مجاني 100% - Gemini API من Google
-// احصل على مفتاحك المجاني من:
-// https://aistudio.google.com/app/apikey
-const String _kApiKey =
-    'AIzaSyBPxW1nNhvQ1E-VEH4xKUVL2dgj5pSLvAI'; // ← غيّر هنا فقط
+const String _kApiKey = 'AIzaSyBPxW1nNhvQ1E-VEH4xKUVL2dgj5pSLvAI';
 // ════════════════════════════════════════════════
 
 class CameraScreen extends StatefulWidget {
@@ -73,7 +68,7 @@ Respond ONLY with JSON:
 {"mealName":"food name","calories":"estimated calories","isHealthy":true,"healthScore":"1-10","description":"direct answer to user","risks":[],"alternatives":[],"nutrients":{"Protein":"x g","Carbs":"x g","Fats":"x g"}}
 ''';
 
-      // ── Gemini API (مجاني) ────────────────────────────────────────
+      // ── Gemini API  ────────────────────────────────────────
       final url =
           'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=$_kApiKey';
 
@@ -106,7 +101,6 @@ Respond ONLY with JSON:
         final rawText =
             data['candidates'][0]['content']['parts'][0]['text'] as String;
 
-        // استخرج JSON من الرد
         final match = RegExp(r'\{[\s\S]*\}').firstMatch(rawText);
         if (match != null) {
           try {
@@ -140,7 +134,7 @@ Respond ONLY with JSON:
   @override
   Widget build(BuildContext context) {
     final p = context.watch<AppProvider>();
-    final s = AppStrings.from(p.isArabic); // <- AppStrings instance
+    final s = AppStrings.from(p.isArabic);
     final theme = Theme.of(context);
     final isDark = p.isDarkMode;
     final isAr = p.isArabic;
@@ -189,7 +183,6 @@ Respond ONLY with JSON:
 
               const SizedBox(height: 20),
 
-              // ── Step 1: اختار صورة ──────────────────────────────────
               if (_image == null) ...[
                 _pickerCard(
                     icon: Icons.camera_alt,
@@ -206,7 +199,6 @@ Respond ONLY with JSON:
                     onTap: () => _pick(ImageSource.gallery)),
               ],
 
-              // ── Step 2: الصورة + سؤال + تحليل ──────────────────────
               if (_image != null) ...[
                 ClipRRect(
                     borderRadius: BorderRadius.circular(16),
@@ -231,8 +223,6 @@ Respond ONLY with JSON:
                   ),
                 ]),
                 const SizedBox(height: 16),
-
-                // ── خانة السؤال ──────────────────────────────────────
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
@@ -257,8 +247,6 @@ Respond ONLY with JSON:
                           ),
                         ]),
                         const SizedBox(height: 10),
-
-                        // أمثلة سريعة
                         Wrap(spacing: 8, runSpacing: 6, children: [
                           _chip(isAr ? 'هل هو صحي؟' : 'Is it healthy?', theme),
                           _chip(isAr ? 'كم سعراته؟' : 'How many calories?',
@@ -272,7 +260,6 @@ Respond ONLY with JSON:
                               theme),
                         ]),
                         const SizedBox(height: 10),
-
                         TextField(
                           controller: _questionCtrl,
                           maxLines: 2,
@@ -296,7 +283,6 @@ Respond ONLY with JSON:
                           onChanged: (_) => setState(() {}),
                         ),
                         const SizedBox(height: 12),
-
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton.icon(

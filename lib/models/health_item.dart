@@ -5,8 +5,8 @@ class HealthItem {
   final String category;
   final String imageUrl;
   final List<String> benefits;
-  final String type; // 'food' or 'exercise'
-  final String? mealDbId; // for fetching full recipe
+  final String type;
+  final String? mealDbId;
   final List<String> ingredients;
   final List<String> measures;
   final String instructions;

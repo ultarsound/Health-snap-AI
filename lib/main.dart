@@ -71,7 +71,10 @@ class _MainNavigatorState extends State<MainNavigator> {
         decoration: BoxDecoration(
           color: isDark ? const Color(0xFF1E1E2E) : Colors.white,
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 20, offset: const Offset(0, -5)),
+            BoxShadow(
+                color: Colors.black.withOpacity(0.08),
+                blurRadius: 20,
+                offset: const Offset(0, -5)),
           ],
           borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         ),
@@ -81,10 +84,10 @@ class _MainNavigatorState extends State<MainNavigator> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _navItem(0, Icons.home_rounded,          s.navHome,     theme),
-                _navItem(1, Icons.camera_alt_rounded,    s.navCamera,   theme),
-                _navItem(2, Icons.person_rounded,        s.navProfile,  theme),
-                _navItem(3, Icons.settings_rounded,      s.navSettings, theme),
+                _navItem(0, Icons.home_rounded, s.navHome, theme),
+                _navItem(1, Icons.camera_alt_rounded, s.navCamera, theme),
+                _navItem(2, Icons.person_rounded, s.navProfile, theme),
+                _navItem(3, Icons.settings_rounded, s.navSettings, theme),
               ],
             ),
           ),
@@ -101,7 +104,9 @@ class _MainNavigatorState extends State<MainNavigator> {
         duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
-          color: selected ? theme.colorScheme.primary.withOpacity(0.12) : Colors.transparent,
+          color: selected
+              ? theme.colorScheme.primary.withOpacity(0.12)
+              : Colors.transparent,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Column(
@@ -113,9 +118,11 @@ class _MainNavigatorState extends State<MainNavigator> {
             const SizedBox(height: 3),
             Text(label,
                 style: TextStyle(
-                    color: selected ? theme.colorScheme.primary : Colors.grey[400],
+                    color:
+                        selected ? theme.colorScheme.primary : Colors.grey[400],
                     fontSize: 11,
-                    fontWeight: selected ? FontWeight.bold : FontWeight.normal)),
+                    fontWeight:
+                        selected ? FontWeight.bold : FontWeight.normal)),
           ],
         ),
       ),
