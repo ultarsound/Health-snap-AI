@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "45052955976",
+    "project_id": "ecommerce-c532f",
+    "storage_bucket": "ecommerce-c532f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45052955976:android:051235753e1c893d8b377d",
+        "android_client_info": {
+          "package_name": "com.ecommerce.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvZ29cIlihFWwTy4MsN6E1JXBJNBy4DL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45052955976:android:b1cf20fe3a51f6a08b377d",
+        "android_client_info": {
+          "package_name": "com.example.healthsnapai_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvZ29cIlihFWwTy4MsN6E1JXBJNBy4DL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45052955976:android:4c3f69d6df66d41c8b377d",
+        "android_client_info": {
+          "package_name": "com.rawanttp.ecommerceshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvZ29cIlihFWwTy4MsN6E1JXBJNBy4DL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
