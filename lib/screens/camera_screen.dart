@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import '../providers/app_provider.dart';
 
-const String _kApiKey = 'AIzaSyBPxW1nNhvQ1E-VEH4xKUVL2dgj5pSLvAI';
+const String _kApiKey = '';
 // ════════════════════════════════════════════════
 
 class CameraScreen extends StatefulWidget {
