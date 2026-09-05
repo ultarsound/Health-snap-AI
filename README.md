@@ -13,7 +13,10 @@ is a an AI-powered mobile application that analyzes food and symptoms using AI i
 
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6192e5 (update project)
 ## UI Preview
 
 ### Home Screen
@@ -30,7 +33,10 @@ is a an AI-powered mobile application that analyzes food and symptoms using AI i
 
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6192e5 (update project)
 ## How to Run the Project
 
 ### 1. Clone the repository

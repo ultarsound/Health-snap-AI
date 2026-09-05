@@ -133,7 +133,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  // ── Language dropdown ────────────────────────────────────────────────────
+
   // ── Language dropdown ────────────────────────────────────────────────────
   Widget _langDropdown(
       AppProvider p, AppStrings s, ThemeData theme, bool isDark) {
@@ -172,7 +172,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           borderRadius: BorderRadius.circular(14),
 
-          // العنصر المختار
+         
           selectedItemBuilder: (_) => items.map((item) {
             return Row(
               children: [
@@ -190,7 +190,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             );
           }).toList(),
 
-          // عناصر القائمة
+         
           items: items.map((item) {
             return DropdownMenuItem<String>(
               value: item.code,
