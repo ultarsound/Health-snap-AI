@@ -1,16 +1,77 @@
-# healthsnapai_application_1
+# Health Snap AI – AI-powered health analysis application
 
-A new Flutter project.
+is a an AI-powered mobile application that analyzes food and symptoms using AI image analysis using Gemini API.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Tech Stack
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter (Mobile Development)
+- Dart
+- AI Integration (Gemini AI / APIs)
+- State Management (Bloc / Cubit )
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## UI Preview
+
+### Home Screen
+
+![Home Screen](assets/UI_App/HomeScreen.jpg)
+
+### Meal Analysis Screen
+
+![Analysis Screen](assets/UI_App/MealAnalysisScreen.jpg)
+
+### Settings Screen
+
+![onboarding Screen](assets/UI_App/SettingsScreen.jpg)
+
+---
+
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+git clone https://github.com/your-username/Health-Snap-AI.git
+
+### 2. Navigate to the project directory
+
+### 3. Install dependencies
+
+### 4. Run the application
+
+---
+
+## Prerequisites
+
+- Flutter SDK installed
+- Dart SDK configured
+- Android Studio or VS Code
+- Android emulator or physical device
+
+---
+
+## Environment Setup
+
+If the project uses environment variables:
+
+### 1. Create a `.env` file in the root directory
+
+### 2. Add required keys
+
+Example:
+
+API_KEY=your_api_key_here
+
+### 3. Add `.env` to `.gitignore`
+
+---
+
+## Security Note
+
+API keys and sensitive data are not included in this repository and are managed securely using environment variables.
+
+---
