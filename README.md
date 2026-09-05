@@ -25,7 +25,7 @@ is a an AI-powered mobile application that analyzes food and symptoms using AI i
 
 ### Settings Screen
 
-![Settings Screen](assets/UI_App/SettingsScreen.jpg)
+![Settings Screen](assets/UI_App/settingsScreen.jpg)
 
 ---
 
